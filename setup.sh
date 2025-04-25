@@ -26,8 +26,7 @@ if [ -z "$PBF_FILES" ]; then
 fi
 
 echo "Merging $PBF_FILES..."
-osmium merge $PBF_FILES -o data/combined.pbf
-
+osmium merge $PBF_FILES -o data/combined.pbf --overwrite
 echo "✅ Done: data/combined.pbf created from:"
 echo "$PBF_FILES"
 
