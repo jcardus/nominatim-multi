@@ -1,0 +1,11 @@
+services:
+  nominatim: 
+    image: mediagis/nominatim:5.1
+    container_name: nominatim
+    ports:
+      - "8080:8080"
+    environment:
+      - REVERSE_ONLY=true
+      - PBF_PATH=/nominatim/data/combined.pbf
+    volumes:
+      - ./data:/nominatim/data
