@@ -30,3 +30,5 @@ osmium merge $PBF_FILES -o data/combined.pbf
 
 echo "✅ Done: data/combined.pbf created from:"
 echo "$PBF_FILES"
+
+docker-compose up -d
