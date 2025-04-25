@@ -15,7 +15,7 @@ mkdir -p data
 # echo "Downloading .pbf files..."
 # wget -q -nc -O data/brazil.pbf https://download.geofabrik.de/south-america/brazil-latest.osm.pbf || true
 wget -nc -O data/chile.pbf https://download.geofabrik.de/south-america/chile-latest.osm.pbf || true
-wget -q -nc -O data/portugal.pbf https://download.geofabrik.de/europe/portugal-latest.osm.pbf || true
+wget -nc -O data/portugal.pbf https://download.geofabrik.de/europe/portugal-latest.osm.pbf || true
 
 echo "Looking for .pbf files in ./data..."
 PBF_FILES=$(find data/ -type f -name "*.pbf" ! -name "combined.pbf")
